@@ -1,0 +1,52 @@
+.q_wrap {
+    width: 80%;
+}
+
+.q_item {
+    box-shadow: 0 1px 4px $gray;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        border: 1px solid $gray;
+        padding: 20px;
+        border-radius: 3px;
+        i {
+            font-size: 3rem;
+            color: $gray;
+            @include sp {
+                font-size: 2rem;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__wrap {
+            display: flex;
+            font-size: 2rem;
+            align-items: center;
+            @include sp {
+                font-size: 1.5rem;
+            }
+            i {
+                font-size: 2rem;
+                color: $blue;
+                @include sp {
+                font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    &__content {
+        padding: 20px;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        @include sp {
+            font-size: 1.2rem;
+        }
+    }
+}

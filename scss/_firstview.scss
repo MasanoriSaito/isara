@@ -1,0 +1,48 @@
+#firstview {
+    width: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 164px 0 90px;
+    background-image: url(../img/main.jpg);
+    background-size: cover;
+    @include sp {
+        background-image: url(../img/mainsp.jpg);
+        padding: 104px 0 30px;
+    }
+}
+
+.fv_content {
+    text-align: center;
+
+    .fv_title {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 2;
+        @include sp {
+            font-size: 1.8rem;
+            line-height: 1.5;
+        }
+    }
+
+    .fv_logo_wrap {
+        width: 310px;
+        margin: 0 auto;
+        .fv_logo {
+            width: 100%;
+            margin-bottom: 20px;
+            @include sp {
+                padding: 20px 0;
+                margin: 0;
+            }
+        }
+    }
+
+    .fv_desc {
+        font-size: 2rem;
+        font-weight: 600;
+        @include sp {
+            font-size: 1.5rem;
+        }
+    }
+}
