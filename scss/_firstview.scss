@@ -3,12 +3,13 @@
     background-position: center;
     display: flex;
     justify-content: center;
-    padding: 164px 0 90px;
+    padding: 90px 0;
     background-image: url(../img/main.jpg);
     background-size: cover;
+    margin-top: 65px;
     @include sp {
         background-image: url(../img/mainsp.jpg);
-        padding: 104px 0 30px;
+        padding: 30px 0;
     }
 }
 
@@ -29,7 +30,7 @@
         width: 310px;
         margin: 0 auto;
         .fv_logo {
-            width: 100%;
+            width: 80%;
             margin-bottom: 20px;
             @include sp {
                 padding: 20px 0;

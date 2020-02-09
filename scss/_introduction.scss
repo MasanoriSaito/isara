@@ -1,0 +1,33 @@
+#introduction {
+    background-image: url(../img/introbottom.jpg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 40px 0 20vh;
+    height: inherit;
+    @include sp {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.intro_content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 25px 0;
+    @include sp {
+        font-size: 1.4rem;
+    }
+    p {
+        margin-bottom: 24px;
+        &:last-child {
+            margin: 0;
+        }
+        span {
+            font-weight: bold;
+            background: linear-gradient(transparent 70%, $yellow 70%);
+        }
+    }
+}

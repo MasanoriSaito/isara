@@ -14,15 +14,15 @@
         border: 1px solid $gray;
         padding: 20px;
         border-radius: 3px;
+        &:hover {
+            cursor: pointer;
+        }
         i {
             font-size: 3rem;
             color: $gray;
             @include sp {
                 font-size: 2rem;
-            }
-            &:hover {
-                cursor: pointer;
-            }
+            }         
         }
 
         &__wrap {

@@ -40,8 +40,11 @@ $(function () {
     ////  question  ///
     /////////////////
     $('.q_item__content').hide();
+    $('.up').hide();
 
     $('.q_item__logo').click(function () {
-        $('.q_item__content').slideToggle(200);
-    })
+        $(this).next().slideToggle(200);
+        $(this).find('.fa-angle-down').toggle();
+        $(this).find('.up').toggle();
+    });
 });
