@@ -1,0 +1,78 @@
+#about_second {
+    background-image: url(../img/aboutsecondbg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    @include tab {
+        background-image: url(../img/aboutsecondbgsp.jpg);
+        line-height: 1.2;
+    }
+    .a_second_desc {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        @include sp {
+            font-size: 1.3rem;
+        }
+    }
+    span {
+        color: $yellow;
+    }
+}
+
+.a_second_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 30px;
+    @include tab {
+        width: 50%;
+        flex-direction: column;
+    }
+    @include sp {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .a_second_item {
+        background-color: #fff;
+        width: 32%;
+        border-radius: 5px;
+        color: black;
+        padding-bottom: 20px;
+        @include tab {
+            width: 100%;
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-bottom: 15px;
+            }
+        }
+        @include sp {
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #fff;
+            text-align: center;
+            background-color: $yellow;
+            border-radius: 5px;
+            width: 80%;
+            margin: 30px auto;
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding: 3px 0;
+            @include sp {
+                margin: 15px auto;
+                font-size: 1.2rem;
+            }
+        }
+        p {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+            @include sp {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

@@ -131,10 +131,11 @@ body {
 .title {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
     h2 {
         font-size: 2.8rem;
         font-weight: bold;
-        margin-bottom: 30px;
         @include sp {
             font-size: 1.8rem;
         }
@@ -145,4 +146,27 @@ body {
             font-size: 1.8rem;
         }
     } 
+}
+
+.blue_wrap {
+    background-color: $blue;
+    text-align: center;
+    color: #fff;
+    padding: 40px 0;
+    @include sp {
+        padding: 20px 0;
+    }
+    p {
+        font-size: 2rem;
+        font-weight: bold;
+        @include tab {
+            font-size: 1.5rem;
+        }
+        @include sp {
+            font-size: 1.2rem;
+        }
+    }
+    span {
+        color: $yellow;
+    }
 }
