@@ -89,7 +89,39 @@
         </section>
 
         <section id="about">
-            
+            <div class="about_square">
+                <p>ABOUT</p>
+            </div>
+            <div class="brackets">
+                <h3 class="brackets_logo">ノマドエンジニア育成講座
+                <br>iSara[イサラ]とは</h3>
+            </div>
+            <p class="about_desc">「 稼ぐこと 」にフォーカスした<br class="brsp">Webエンジニア育成講座です</p>
+            <div class="about_wrap">
+                <p class="about_wrap_desc">稼げるエンジニアに必要な<br class="brsp">５つのスキルとは？</p>
+                <div class="about_content">
+                    <div class="about_item">
+                        <img src="img/skill.jpg" alt="">
+                        <p>基礎的な<br>プログラミングスキル</p>
+                    </div>
+                    <div class="about_item">
+                        <img src="img/sales.jpg" alt="">
+                        <p>案件獲得に必要な<br>営業力</p>
+                    </div>
+                    <div class="about_item">
+                        <img src="img/document.jpg" alt="">
+                        <p>見積もり作成から<br>納品までの知識</p>
+                    </div>
+                    <div class="about_item">
+                        <img src="img/plusone.jpg" alt="">
+                        <p>自分の付加価値を<br>高めるスキル</p>
+                    </div>
+                    <div class="about_item">
+                        <img src="img/connection.jpg" alt="">
+                        <p>フリーランス同士の<br>横のつながり</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="contactform" class="inner">
@@ -99,15 +131,22 @@
                     <h2>資料請求フォーム</h2>
                 </div>
                 <p>まずは無料で資料請求からどうぞ。</p>
-                <form action="" method="" id="">
-                    <input type="text" name="" id="" placeholder="姓">
-                    <br><input type="text" name="" id="" placeholder="名">
-                    <br><input type="text" name="" id="" placeholder="メールアドレス">
-                    <br><textarea name="" id="" cols="90" rows="12" placeholder="質問などはこちら(空欄でもOKです)"></textarea>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfYygjMGutvP7dqEbaAfu6KBB3uZLt9eKp0NF-GtPPPNbHYUA/formResponse" method="post" target="dummyIframe">
+                    <input type="text" name="entry.106655913" id="" autocomplete="name" placeholder="姓" required>
+                    <br><input type="text" name="entry.540939515" id="" autocomplete="name" placeholder="名" required>
+                    <br><input type="text" name="emailAddress" id="" placeholder="メールアドレス" required>
+                    <br><textarea name="entry.177426763" id="" cols="90" rows="12" placeholder="質問などはこちら(空欄でもOKです)"></textarea>
                     <div class="form_submit">
-                        <p>送信</p>
+                        <input type="submit" value="送信">
                     </div>
                 </form>
+                <!-- <iframe name="dummyIframe" style="display:none;" onclick="showThxMessage()"></iframe> -->
+
+                <!-- <div id="thxMessage" class="animated fadeIn" style="display:none;">
+                    <div class="afterformtit">お問い合わせありがとうございました</div>
+                    <div class="formtxt">ご記入いただいたメールアドレス <span style="color:#5B4E42; font-weight:bold;"></span>
+                        へ自動返信メールを送信させていただく予定でしたがデモなので送りません。</div>
+                </div> -->
             </div>
         </section>
 
@@ -324,6 +363,17 @@
         <i class="fas fa-angle-up"></i>
     </div>
 
-    <!-- <script src="js/main.js"></script> -->
+    <!-- <script>
+        function showThxMessage() {
+            var email = document.myForm.emailAddress.value;
+            if (email !== '') {
+                var thxDiv = document.getElementById('thxMessage');
+                thxDiv.getElementsByTagName('span')[0].innerHTML = email;
+                document.myForm.reset();
+                document.getElementById('contactform').style.display = 'none';
+                thxDiv.style.display = 'block';
+            }
+        }
+    </script> -->
 </body>
 </html>

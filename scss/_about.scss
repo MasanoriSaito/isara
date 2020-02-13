@@ -1,0 +1,96 @@
+#about {
+    background-color: $cleam;
+    text-align: center;
+    padding-bottom: 70px;
+    .about_square {
+        position: relative;
+        top: -40px;
+        @include sp {
+            top: -30px;
+        }
+        p {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: $yellow;
+            text-align: center;
+            line-height: 80px;
+            color: #fff;
+            display: inline-block;
+            font-size: 1.5rem;
+            @include sp {
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .brackets {
+        margin-bottom: 50px;
+        @include sp {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.about_desc {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    @include sp {
+        font-size: 1.5rem;
+    }
+}
+
+.about_wrap {
+    background-color: #fff;
+    border: 2px solid $yellow;
+    border-radius: 3px;
+    padding: 30px 0;
+    width: 1170px;
+    margin: 0 auto;
+    @include tab {
+        width: 90%;
+        padding: 15px 0;
+    }
+    .about_wrap_desc {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        @include sp {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.about_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    @include tab {
+        width: 70%;
+    }
+    @include sp {
+        width: 80%;
+    }
+    .about_item {
+        padding: 10px;
+        font-size: 1.4rem;
+        @include sp {
+            padding: 5px;
+            font-size: 1rem;
+        }
+        img {
+            height: auto;
+            width: auto;
+            margin-bottom: 10px;
+            @include sp {
+                height: 30px;
+            }
+        }
+
+    }
+}

@@ -47,17 +47,18 @@ form {
     }
     .form_submit {
         width: 100%;
-        padding: 20px 0;
-        background-color: $salmon;
-        border-radius: 35px;
-        color: #fff;
-        &:hover {
-        cursor: pointer;
-        background-color: $pink;
-        }
-        p {
+        
+        input {
             font-size: 2.4rem;
             margin: 0;
+            padding: 10px 0;
+            background-color: $salmon;
+            border-radius: 35px;
+            color: #fff;
+            &:hover {
+                cursor: pointer;
+                background-color: $pink;
+        }
         }
     }
 }
