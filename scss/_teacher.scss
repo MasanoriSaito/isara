@@ -1,0 +1,77 @@
+#teacher {
+    background-image: url(../img/teacherbg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 70px 0 50px;
+    text-align: center;
+    .teacher_desc {
+        font-size: 1.6rem;
+        @include sp {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.teacher_wrap {
+    width: 60%;
+    margin: 0 auto;
+    @include sp {
+        width: 95%;
+    }
+}
+
+.teacher_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include tab {
+        flex-direction: column;
+    }
+}
+
+.teacher_item {
+    border: 4px solid;
+    width: 48%;
+    position: relative;
+    margin-top: 200px;
+    padding: 50px 20px;
+    @include tab {
+        width: 100%;
+    }
+    @include sp {
+        margin-top: 130px;
+        border: 3px solid;
+        padding: 50px 10px 20px;
+    }
+    .teacher_img {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 198px;
+        height: 198px;
+        position: absolute;
+        top: -160px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        @include sp {
+            width: 120px;
+            height: 120px;
+            top: -90px;
+        }
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-width: 100%;
+        }
+    }
+    p {
+        font-size: 1.6rem;
+        @include sp {
+            font-size: 1.2rem;
+        }
+    }
+    .teacher_title, .teacher_name {
+        margin-bottom: 10px;
+    }
+}

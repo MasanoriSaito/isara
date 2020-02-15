@@ -1,0 +1,44 @@
+#learning {
+    padding: 40px 0;
+    text-align: center;
+    .learning_desc {
+        font-size: 2rem;
+        padding-bottom: 20px;
+        @include tab {
+            font-size: 1.5rem;
+            padding: 0;
+        }
+    }
+}
+
+.learning_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 40px auto;
+    @include tab {
+        width: 80%;
+        .learning_item {
+            width: 45%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    @include sp {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 20px auto;
+        .learning_item {
+            width: 48%;
+        }
+    }
+}
+
+.learning_para {
+    font-size: 1.6rem;
+    font-weight: bold;
+    @include sp {
+        font-size: 1.2rem;
+    }
+}
