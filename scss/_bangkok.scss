@@ -1,0 +1,37 @@
+#bangkok {
+    background-image: url(../img/bangkokbg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    @include sp {
+        background-image: url(../img/bangkokbgsp.jpg);
+        padding: 20px 0;
+    }
+    .title {
+        justify-content: flex-start;
+        h2 {
+            font-size: 2.4rem;
+        }
+        @include sp {
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+    .title_small {
+        white-space: normal;
+    }
+}
+
+.bangkok_wrap {
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    li {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        @include sp {
+            font-size: 1.2rem;
+        }
+    }
+}

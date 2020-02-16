@@ -1,0 +1,74 @@
+#content {
+    background-image: url(../img/classbg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+    @include sp {
+        background-image: url(../img/classbgsp.jpg);
+        padding: 30px 0 20px;
+    }
+    .title {
+        @include sp {
+            margin-bottom: 15px;
+        }
+    }
+    .title_desc {
+        @include sp {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.content_wrap {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    @include tab {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+.content_item {
+    width: 48%;
+    @include tab {
+        width: 100%;
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+    .content_border {
+        border: 2px solid $blue;
+        border-radius: 5px;
+    }
+    h3 {
+        background-color: $blue;
+        padding: 15px;
+        font-size: 2rem;
+        font-weight: bold;
+        @include tab {
+            font-size: 1.6rem;
+        }
+        @include sp {
+            font-size: 1.5rem;
+        }
+    }
+    p {
+        padding: 10px;
+        font-size: 1.6rem;
+        border: 1px dotted $dotted;
+        background-color: #fff;
+        color: black;
+        font-weight: bold;
+        @include sp {
+            font-size: 1.2rem;
+        }
+        &:last-child {
+            border: none;
+            border-radius: 0 0 5px 5px;
+        }
+    }
+}

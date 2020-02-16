@@ -1,0 +1,60 @@
+#qa {
+    background-color: $yellow;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    @include sp {
+        padding: 20px 0;
+    }
+    .qa_circle {
+        background-color: #fff;
+        color: $yellow;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        @include sp {
+            width: 60px;
+            height: 60px;
+        }
+        p {
+            line-height: 80px;
+            font-size: 2rem;
+            font-weight: bold;
+            @include sp {
+                font-size: 1.2rem;
+                line-height: 60px;
+            }
+        }
+    }
+
+    .brackets {
+        color: #fff;
+        &:before {
+            border-top: 4px solid;
+            border-left: 4px solid;
+        }
+        &:after {
+            border-bottom: 4px solid;
+            border-right: 4px solid;
+        }
+    }
+
+    &:after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        border: 25px solid transparent;
+        border-top-color: $yellow;
+        margin-left: -25px;
+        @include sp {
+            border: 15px solid transparent;
+            border-top-color: $yellow;
+            margin-left: -15px;
+        }
+    }
+}

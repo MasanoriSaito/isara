@@ -1,0 +1,59 @@
+#possible {
+    text-align: center;
+    padding: 40px 0;
+    @include sp {
+        padding: 20px 0;
+    }
+    .title {
+        @include sp {
+            margin-bottom: 15px;
+        }
+    }
+    .title_small {
+        display: inline-block;
+        width: 90%;
+    }
+}
+
+.possible_wrap {
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 15px;
+    @include tab {
+        width: 90%;
+    }
+    .possible_item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        text-align: start;
+        color: $fontgray;
+        .possible_img {
+            width: 30%;
+            img {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-width: 100%;
+                border: 2px solid $yellow;
+            }
+        }
+        .possible_content {
+            width: 65%;
+        }
+        .possible_desc {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            @include sp {
+                font-size: 1.4rem;
+            }
+        }
+        .possible_name {
+            font-size: 1.6rem;
+            text-decoration: underline;
+            @include sp {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

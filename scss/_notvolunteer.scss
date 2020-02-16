@@ -1,0 +1,29 @@
+#notvolunteer {
+    background-image: url(../img/specialdetail.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    @include sp {
+        background-image: url(../img/specialdetailsp.jpg);
+        padding: 20px 0;
+    }
+    .title_desc {
+        @include sp {
+            font-size: 1.2rem;
+        }
+    }
+    .brackets {
+        color: #fff;
+        margin-bottom: 20px;
+        &:before {
+            border-top: 4px solid;
+            border-left: 4px solid;
+        }
+        &:after {
+            border-bottom: 4px solid;
+            border-right: 4px solid;
+        }
+    }
+}

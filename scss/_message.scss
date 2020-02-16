@@ -1,0 +1,42 @@
+#message {
+    padding: 40px 0;
+    text-align: center;
+}
+.message_wrap {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    @include tab {
+        width: 90%;
+        flex-direction: column;
+    }
+    .message_img {
+        width: 25%;
+
+        @include tab {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+.message_content {
+    text-align: start;
+    font-size: 1.4rem;
+    width: 70%;
+    @include tab {
+        width: 100%;
+    }
+    p {
+        margin-bottom: 10px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    ul {
+        margin-bottom: 10px;
+    }
+}

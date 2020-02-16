@@ -5,6 +5,10 @@
         padding: 0 15px;
         .q_item__logo {
             background-color: $cleam;
+            border: none;
+            i {
+                color: black;
+            }
             &__wrap {
                 img {
                     width: 35px;

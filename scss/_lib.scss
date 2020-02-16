@@ -4,7 +4,10 @@
 $salmon: #da6b64;
 $pink: #d84940;
 $yellow: #ebb94d;
+$lemon: #f7c23c;
 $gray: #ececec;
+$dotted: #e5e5e5;
+$fontgray: #777;
 $blue: #016ea9;
 $cleam: #fef5e0;
 
@@ -146,6 +149,22 @@ body {
             font-size: 1.8rem;
         }
     } 
+}
+.title_desc {
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+    font-weight: bold;
+    @include sp {
+        font-size: 1.4rem;
+    }
+}
+
+.title_small {
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+    @include sp {
+        font-size: 1.2rem;
+    }
 }
 
 .blue_wrap {
